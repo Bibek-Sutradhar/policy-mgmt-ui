@@ -1,0 +1,7 @@
+---
+applications:
+- name: cf-angularPMSUI
+  memory: 128M
+  instances: 1
+  random-route: true
+  buildpack: staticfile_buildpack
