@@ -3,5 +3,9 @@ applications:
 - name: cf-angularPMSUI
   memory: 128M
   instances: 1
-  random-route: false
   buildpack: staticfile_buildpack
+  routes:
+  - route: cf-angularPMSUI.cfapps.io
+  stack: cflinuxfs2
+  timeout: 60
+  path: dist
