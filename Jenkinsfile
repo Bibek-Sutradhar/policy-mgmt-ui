@@ -6,7 +6,7 @@ node {
 		bat "npm install"
 	}
 	stage("build"){
-		bat "ng build -prod"
+		bat "npm run ng -- build"
 	}
 
 	stage("cloudfoundry_login"){
